@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <h1>All our flats</h1>
+  </div>
+
+  <div class="row">
+  <p>All <%= @flats.count %> flats</p>
+  </div>
+
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-4">
+
+        <div class="flat-card">
+          <div class="card-content">
+            <h4><%= flat.name %></h4>
+            <p><%= flat.description %></p>
+            <div class="d-flex justify-content-between">
+              <p>People: <%= flat.number_of_guests %></p>
+              <p>Price: <%= flat.price_per_night %></p>
+            </div>
+          </div>
+          <div class="card-actions d-flex justify-content-between">
+            <p>Info</p>
+            <p>Edit</p>
+            <p>Remove</p>
+          </div>
+        </div>
+
+      </div>
+    <% end %>
+  </div>
+</div>

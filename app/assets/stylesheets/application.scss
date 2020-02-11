@@ -11,3 +11,12 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  .flat-card {
+    padding: 16px;
+    border-radius: 2px;
+    margin: 16px 0;
+    box-shadow: 5px 5px 30px #b8b8b8;
+  }
+}
